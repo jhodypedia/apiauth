@@ -110,7 +110,7 @@ const sendResetEmail = (email) => {
       if (err) reject(err);
 
       // Kirimkan email reset
-      const resetLink = `http://localhost:3000/reset-password/${token}`;
+      const resetLink = `https://jhody.pw/reset-password/${token}`;
 
       sendEmail(email, 'Password Reset Request', `Please click the following link to reset your password: ${resetLink}`)
         .then((info) => {
